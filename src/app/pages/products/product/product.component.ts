@@ -7,9 +7,9 @@ import { Product } from '../interfaces/product.interface';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  @Input() product!: Product
+  @Input() product!: Product // el decorador Input comunica el padre con el hijo y envia la prop de tipo Product
   constructor() {}
-  @Output() addToCartClick = new EventEmitter<Product>();
+  @Output() addToCartClick = new EventEmitter<Product>(); // el decorador Output comunica el hijo con el padre
 
   ngOnInit(): void {
   }

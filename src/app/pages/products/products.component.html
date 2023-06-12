@@ -1,7 +1,11 @@
 <section class="products">
   <app-product
   (addToCartClick)="addToCart($event)"
-  [product]="product"
+   [product]="product"
   *ngFor="let product of products"
   ></app-product>
 </section>
+<!--
+addToCa.. = event que dispara un metodo
+product = props recibida de product
+se itera con ngFor -->
